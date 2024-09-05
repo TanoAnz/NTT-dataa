@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.container-in{
+  display: flex;
+  justify-content: center;
+}
+.container-record{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px ;
+}
+.input-field{
+    display: flex;
+    justify-content: center;
+    height: 25px;
+  }
+  .input-field {
+    width: 180px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    color:white;
+    background-color: transparent;
+  }
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: #007bff;
+  }

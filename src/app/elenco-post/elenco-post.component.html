@@ -1,0 +1,7 @@
+<app-menu></app-menu>
+<app-addremovepost></app-addremovepost>
+<div class="flex" *ngFor="let post of posts">
+    <app-card-post [post]="post"></app-card-post>
+</div>
+<div class="flex"><button (click)="fetchPost()">Carica</button></div>
+<app-logout></app-logout>

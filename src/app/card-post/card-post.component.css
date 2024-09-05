@@ -1,0 +1,168 @@
+.card {
+    position: relative;
+    background: rgb(38, 38, 38);
+    padding: 1em;
+    z-index: 5;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 300px;
+    transition: 200ms ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .title {
+    color: #C6E1ED;
+    font-family:"New Amsterdam", sans-serif;
+    font-size: 0.85em;
+    font-weight: 400;
+    font-size:20px;;
+  }
+  
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .body .text {
+    margin: 0 10px 0 0;
+    white-space: pre-line;
+    color: #c0c3d7;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+  
+  .footer {
+    position: relative;
+    width: 100%;
+    color: #9fa4aa;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  .footer div {
+    margin-right: 1rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .footer svg {
+    margin-right: 5px;
+    height: 100%;
+    stroke: #9fa4aa;
+  }
+  
+  .viewer span {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(28, 117, 219);
+    margin-right: -6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 8px;
+    color: #fff;
+    padding: 2px;
+  }
+  
+  .viewer span svg {
+    stroke: #fff;
+  }
+
+
+.button {
+    height: 2em;
+    width: 6em;
+    color:#fff;
+    border-radius: 1em;
+    border: 0.1rem solid transparent;
+    background-color: rgb(145, 190, 241);
+    transition: 0.3s;
+    font-size: 1em;
+    margin-top: 15px;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    transform: scale(1.05) rotate(3deg);
+  }
+  
+  .button:active {
+    animation: borderMove 0.5s forwards;
+    transform: scale(0.9) rotate(-3deg);
+    background-color: rgb(0, 0, 0);
+    color: rgb(64, 146, 239);
+    border: 0.1rem solid rgb(38, 103, 224);
+  }
+  
+  @keyframes borderMove {
+    0% {
+      border-width: 0.1rem;
+      transform: scale(1) rotate(0deg);
+    }
+  
+    50% {
+      border-width: 0.4rem;
+      transform: scale(0.9) rotate(-3deg);
+    }
+  
+    100% {
+      border-width: 0.15rem;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  .form-group{
+    color:#C6E1ED;
+    display: flex;
+    flex-direction: column;
+    font-family:"New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+
+  }
+  .input-field{
+    border-radius: 10px;
+  }
+  .input:focus{
+    border-style: none;
+    border: white;
+  }
+  /* From Uiverse.io by absoluteSTrange */ 
+.bottone{
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color:  rgb(46, 191, 201) 0px 0px 0px 0px;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow:  rgb(27, 167, 177) 0px 0px 0px 0px;
+    color: #138dc2;
+    cursor: pointer;
+  }
+  
+  .bottone:hover {
+    box-shadow:  rgb(114, 215, 223) 0px 0px 0px 0px;
+  }
+  
+  .bottone:active {
+    background-color:  rgb(46, 191, 201) 0px 0px 0px 0px;
+    /*50, 168, 80*/
+    box-shadow: rgb(46, 191, 201) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+  }
+  .btn-container{
+    display: flex;
+    justify-content: center;
+  }
+  

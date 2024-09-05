@@ -1,0 +1,76 @@
+
+<div class="container">
+    <div class="card">
+      <ul class="list">
+        <a class="element"  (click)="toggleForm()">
+          <svg
+            class="lucide lucide-user-round-plus"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2"
+            stroke="#7e8590"
+            fill="none"
+            viewBox="0 0 24 24"
+            height="24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M2 21a8 8 0 0 1 13.292-6"></path>
+            <circle r="5" cy="8" cx="10"></circle>
+            <path d="M19 16v6"></path>
+            <path d="M22 19h-6"></path>
+          </svg>
+          <p class="label">Add Member</p>
+        </a>
+      </ul>
+      <div *ngIf="isFormVisible" class="form-container">
+        <form (ngSubmit)="onSubmit()">
+          <label for="name" class="text">name</label>
+          <input class="input-field" type="text" id="name" [(ngModel)]="user.name" name="name" required>
+    
+          <label for="email" class="text">email</label>
+          <input class="input-field" type="email" id="email" [(ngModel)]="user.email" name="email" required>
+          
+          <label for="gender" class="text">gender</label>
+          <input class="input-field" type="text" id="gender" [(ngModel)]="user.gender" name="gender" required>
+    
+          <label for="status" class="text">status</label>
+          <input class="input-field" type="text" id="name" [(ngModel)]="user.status" name="status" placeholder="active/inactive" required>
+    
+          <div class="submit"><button class="submit-button" type="submit">Salva</button></div>
+        </form>
+      </div>
+      <div class="separator"></div>
+      <ul class="list">
+        <a class="element delete" (click)="toggleForm1()" >
+          <svg
+            class="lucide lucide-trash-2"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2"
+            stroke="#7e8590"
+            fill="none"
+            viewBox="0 0 24 24"
+            height="24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M3 6h18"></path>
+            <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+            <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+            <line y2="17" y1="11" x2="10" x1="10"></line>
+            <line y2="17" y1="11" x2="14" x1="14"></line>
+          </svg>
+          <p class="label">Delete Member</p>
+    
+        </a>
+      </ul>
+      <div *ngIf="isFormVisible1" class="form-container">
+        <form (ngSubmit)="deleteUser(id)">
+          <label for="id" class="text">id</label>
+          <input class="input-field" type="text" id="id" [(ngModel)]="id" name="id" required>
+    
+          <div class="submit"><button class="submit-button" type="submit">Elimina</button></div>
+        </form>
+      </div>
+    </div>

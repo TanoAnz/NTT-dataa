@@ -1,0 +1,62 @@
+.card {
+    width: 260px;
+    height: 100px;
+    background: rgb(38, 38, 38);
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
+    margin-top:5px;
+    border-radius:5px ;
+    text-decoration: none;
+  }
+  .id{
+    color:white;
+    font-size:20px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+  }
+  .User{
+    display: flex;
+    position: relative;
+  }
+  .Username{
+   
+    color:white;
+    font-size:20px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    
+  }
+  .status {
+    display: flex;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    left:5px;
+  }
+  .cerchioOnline{
+    background-color: green;
+  }
+  .cerchioOffline{
+    background-color: rgb(245, 6, 6);
+  }
+  .smallsvg {
+    width: 9px;
+    position:relative;
+    left: 7px;
+
+  }
+  .female{
+    position: relative;
+    top:25px;
+    width: 8px;
+  }
+  .malesmallsvg {
+    transform: rotate(225deg);
+  }

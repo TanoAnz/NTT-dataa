@@ -1,0 +1,16 @@
+<div class="container-in"><input class="input-field" [(ngModel)]="searchTerm" placeholder="Cerca utenti per id" (input)="cercaUtenti();" (blur)="fetchUsers()" /></div>
+<div class="container">
+<app-menu></app-menu>
+<div class="container-record">
+<label for="recordsPerPage" style="color:white;">Record per pagina:</label>
+<select [(ngModel)]="recordsPerPage" (change)="fetchUsers()">
+  <option *ngFor="let count of recordOptions" [value]="count">{{ count }}</option>
+</select>
+</div>
+</div>
+<div *ngFor="let user of utenti; let i = index">
+    <app-card-social [user]="user"></app-card-social>
+  </div>
+<app-addremove></app-addremove>
+<app-logout></app-logout>
+
