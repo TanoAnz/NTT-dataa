@@ -1,27 +1,34 @@
-# NTTDATA
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+# Progetto Angular: Gestione Utenti e Post
 
-## Development server
+Questo progetto Angular consente la gestione di utenti e post, inclusa la visualizzazione, la ricerca, l'aggiunta e la rimozione di utenti e post. Include anche funzionalità opzionali come il commento sui post e la gestione dei moduli con lazy loading.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Requisiti
 
-## Code scaffolding
+- Node.js e npm installati.
+- Un token speciale per il login, che può essere ottenuto accedendo alla pagina [https://gorest.co.in/consumer/login](https://gorest.co.in/consumer/login).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installazione
 
-## Build
+1. **Clona il repository:**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   ```bash
+   git clone <URL_DEL_REPOSITORY>
+   cd <NOME_DEL_REPOSITORY>
+##Funzionalità
+#Login
+La schermata di login richiede un token speciale che deve essere generato accedendo alla pagina https://gorest.co.in/consumer/login. Questo token viene utilizzato per il controllo della sessione e per invocare le REST API tramite HTTP Bearer Token.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#Pagina Principale – Elenco Utenti
+##Visualizzazione: Mostra un elenco di utenti con informazioni base.
+##Ricerca e Filtraggio: Possibilità di visualizzare un numero di record a scelta e di effettuare ricerche.
+##Gestione Utenti: Aggiungere o rimuovere un utente.
+Pagina Dettaglio Utente
+Dettagli Utente: Visualizzazione delle informazioni dettagliate dell'utente.
+Post e Commenti: Mostra l'elenco dei post dell'utente e i commenti relativi a ciascun post.
+Commenti ai Post (Opzionale): Possibilità di inserire commenti ai post.
+Elenco Post
+Visualizzazione: Mostra tutti i post presenti a sistema.
+Ricerca e Filtraggio: Possibilità di effettuare ricerche sui post.
+Commenti sui Post: Visualizzazione dei commenti associati a ciascun post.
+Aggiunta di Post: Possibilità di inserire nuovi post.
