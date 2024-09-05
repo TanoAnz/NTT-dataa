@@ -15,19 +15,19 @@ Questo progetto Angular consente la gestione di utenti e post, inclusa la visual
    ```bash
    git clone <URL_DEL_REPOSITORY>
    cd <NOME_DEL_REPOSITORY>
-##Funzionalità
-#Login
+# Funzionalità
+## Login
 La schermata di login richiede un token speciale che deve essere generato accedendo alla pagina https://gorest.co.in/consumer/login. Questo token viene utilizzato per il controllo della sessione e per invocare le REST API tramite HTTP Bearer Token.
 
-#Pagina Principale – Elenco Utenti
-##Visualizzazione: Mostra un elenco di utenti con informazioni base.
-##Ricerca e Filtraggio: Possibilità di visualizzare un numero di record a scelta e di effettuare ricerche.
-##Gestione Utenti: Aggiungere o rimuovere un utente.
-Pagina Dettaglio Utente
+## Pagina Principale
+Visualizzazione: Mostra un elenco di utenti con informazioni base.
+Ricerca e Filtraggio: Possibilità di visualizzare un numero di record a scelta e di effettuare ricerche.
+Gestione Utenti: Aggiungere o rimuovere un utente.
+## Pagina Dettaglio Utente
 Dettagli Utente: Visualizzazione delle informazioni dettagliate dell'utente.
 Post e Commenti: Mostra l'elenco dei post dell'utente e i commenti relativi a ciascun post.
 Commenti ai Post (Opzionale): Possibilità di inserire commenti ai post.
-Elenco Post
+## Pagina elenco post
 Visualizzazione: Mostra tutti i post presenti a sistema.
 Ricerca e Filtraggio: Possibilità di effettuare ricerche sui post.
 Commenti sui Post: Visualizzazione dei commenti associati a ciascun post.
